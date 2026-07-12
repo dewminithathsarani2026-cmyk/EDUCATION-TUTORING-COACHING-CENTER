@@ -19,6 +19,32 @@
     </nav>
   </div>
 </header>
-    
+    <section class="section">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>Fill out the form below to inquire about our coaching programs or schedule a free consultation.</p>
+    <form onsubmit="alert('Thank you! We will contact you soon.'); return false;">
+      <label for="name">Parent's Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="childAge">Child's Age/Grade:</label>
+      <input type="text" id="childAge" name="childAge" placeholder="e.g., Grade 8" required />
+
+      <label for="subject">Subject of Interest:</label>
+      <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+        <option value="Exam Prep">Exam Preparation</option>
+      </select>
+<label for="message">Details / Questions:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Tell us more..." required></textarea>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
 </body>
 </html>
